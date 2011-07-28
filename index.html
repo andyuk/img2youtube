@@ -25,18 +25,15 @@
 <br/>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-<script type="text/javascript" src="swfobject/swfobject.js"></script>
 <script type="text/javascript" src="js/jquery.img2youtube.js"></script>
 <script type="text/javascript">
 $(function() {
   
-  // 'method' options are: 'iframe' or 'swfobject'
-  // if flash is not installed, 'iframe' is the fall back.
-  $('a.img2youtube').img2youtube({
-                              'method': 'iframe',
-                              // autoplay does not work with iframe
-                              'autoplay': true
-                            });
+  $('a.img2youtube').img2youtube();
+  
+  // optionally, turn off autoplay
+  //$('a.img2youtube').img2youtube({'autoplay': false });
+  
 });
 </script>
     
