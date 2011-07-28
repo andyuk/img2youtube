@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Untitled Document</title>
+	</head>
+	<body>
+
+<a class="img2youtube" title="Title of video" href="http://youtu.be/u1zgFlCw8Aw">
+    <img src="http://dummyimage.com/640x390/666/fff" width="640" height="390" />
+</a>
+
+<br/>
+
+<a class="img2youtube" title="Title of video" href="http://youtu.be/0Bmhjf0rKe8">
+    <img src="http://dummyimage.com/350x200/ABC/ddd" width="640" height="390" />
+</a>
+
+<br/>
+    
+<a class="img2youtube" title="Title of video" href="http://youtu.be/vdQj2ohqCBk">
+    <img src="http://dummyimage.com/425x349/DEF/000" width="425" height="349" />
+</a>
+
+<br/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script type="text/javascript" src="swfobject/swfobject.js"></script>
+<script type="text/javascript" src="js/jquery.img2youtube.js"></script>
+<script type="text/javascript">
+$(function() {
+  
+  // 'method' options are: 'iframe' or 'swfobject'
+  // if flash is not installed, 'iframe' is the fall back.
+  $('a.img2youtube').img2youtube({
+                              'method': 'iframe',
+                              // autoplay does not work with iframe
+                              'autoplay': true
+                            });
+});
+</script>
+    
+	</body>
+</html>
